@@ -1,0 +1,91 @@
+/*
+ITEC 2838 Final Project - Style sheet
+    Auth: Tom Q.
+    Date: 12MAR2020
+*/
+
+/*reset styling*/
+article, body, div, footer, header, h1, h2, h3
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*body*/
+body
+{
+    background-color: #cc6600;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+header
+{
+    margin: 1em;
+}
+h2
+{
+    margin-bottom: 0 auto;
+    background-color: beige;
+}
+.container
+{
+    width: 75%;
+    margin: 0 auto;
+    /*position: relative;
+    top: 1em;*/
+}
+article
+{
+    margin: 0 auto;
+    /*padding: 1em;*/
+    background: white;
+    overflow: auto;
+}
+/*navigation styling*/
+nav.sitenavi
+{
+    /*color: #34180f;
+    background-color: #edab37;*/
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    
+}
+nav.sitenavi li
+{
+    background-color: inherit;
+    border: none;
+    /*margin: 0.3em 0.6em;
+    /*padding:  14px 28px*/
+    margin: 0.25em 0.4em;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn:hover
+{
+    background: cadetblue;
+}
+/*reviews styling*/
+#enclosed
+{
+    width: 1000px;
+}
+.content
+{
+    /*float: none;*/
+    width: 950px;
+    height: 450px;
+    white-space: normal;
+    background-repeat: no-repeat;
+}
+
+#contentContain
+{
+    width: 950px;
+    height: 450px;
+    /*border: 3px black solid;*/
+    display: inline-block;
+    /*overflow: hidden;*/
+}

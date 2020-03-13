@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cinna~Roller | Choose how you roll</title>
+  <meta name="viewport" content="width=device-width">
+  <!--
+      <script src="modernizr-custom.js"></script>
+  ITEC 2838: Final Project
+    Auth: Tom Q.
+    Date: 10MAR20
+  -->
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<header>
+    <h1>Cinna~Roller</h1>
+    <p>Look at our ratings...</p>
+</header>
+<nav class="sitenavi">
+  <ul>
+    <li><a href="index.html" class="btn">Home</a></li>
+    <li><a href="reviews.html" class="btn">Feedback</a></li>
+    <li><a href="about.html" class="btn">About Us</a></li>
+  </ul>
+</nav>
+<div class="container">
+    <body>
+        <article>
+        <h2>View some of our Reviews</h2>
+        <div id="contentContain">
+        <div id="enclosed">
+            <div id="item1" class="content">
+        <img src="Reviews/review2.png" alt="review1" id="custrev" onclick="scroller();">  >
+            </div>    
+            </div>
+        </div>
+       
+        </div>
+    </article>
+    <script>
+        var imgtrakr = 3;
+        var countr = 0
+        
+
+        function scroller()
+        {
+            var imgr = document.getElementById('custrev');
+            var imgDir = 'Reviews/';
+            var images = ['review1.png','review2.png','review3.png'];
+
+            countr++;
+            var len = images.length;
+          
+            if (countr < imgtrakr) 
+            {
+                   //img.src = "review3.png";
+                   //imgtrakr = '2';
+                   imgr.src = imgDir + images[countr];
+            }
+            else if (countr == len)
+            {
+                //img.src = "review2.png";
+                //imgtrakr = '1';
+                imgr.src = imgDir + images[0];
+                countr = 0;
+            }
+
+        } 
+
+    </script>
+    </body>
+</div>
+</html>

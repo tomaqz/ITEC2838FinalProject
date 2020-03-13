@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cinna~Roller | Choose how you roll</title>
+  <meta name="viewport" content="width=device-width">
+  <!--<script src="modernizr-custom.js"></script>
+  ITEC 2838: Final Project
+    Auth: Tom Q.
+    Date: 10MAR20
+  -->
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<header>
+    <h1>Cinna~Roller</h1>
+    <p>Choose how your roll...</p>
+</header>
+<nav class="sitenavi">
+  <ul>
+    <li><a href="index.html" class="btn">Home</a></li>
+    <li><a href="reviews.html"class="btn">Feedback</a></li>
+    <li><a href="about.html" class="btn">About Us</a></li>
+  </ul>
+</nav>
+<style>
+</style>
+<div class="container">
+<body>
+<h2>Popular items below for quick orders</h2>
+<article>
+<p>We bake and sell the best Cinnamon Rolls and treats in Southern Utah...</p>
+<p>
+  <input type="image" src="luxroll-324x324.png" onclick="shopCart();" alt="luxroll image"/>
+  <input type="image" src="cookie-324x324.png"  onclick="shopCart();" alt="cookie image"/>
+  <input type="image" src="foodroll-324x324.png" onclick="shopCart()" alt="foodroll image"/>
+  <!--<input type="image" src="classicroll-324x324.png" name="saveform" id="saveform" onclick="shopCart()" alt="cinnamon roll image"/>
+  -->
+</p>
+<div id="total"></div>
+</article>  
+    <script>
+      var buttons = document.querySelector("image");
+       
+      buttons.addEventListener("click", shopCart, false);
+      var clicked = false;
+
+      function shopCart(buttons)
+      {
+        //add variables for user input?
+        var usrNum = prompt("How many would you like? ", "1");
+        //var userEntry = "";
+
+         if(!clicked)
+         {
+          //expression to process whatever the user inputs and modify the console log to calculate...
+           //console.log("Items selected for purchase comes to " + "$" + (usrNum * 4) + " USD");
+           document.getElementById("total").innerHTML = "Total of your request is " + "$" + (usrNum * 4) + '\n' +" Phone number to reach us is: 435-599-0000";
+         }
+      }
+
+    </script>
+</body>
+</div>
+
+</html>
